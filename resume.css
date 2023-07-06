@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    font-weight: bolder;
+    margin-bottom: 70px;
+}
+
+.navbar img {
+    margin-right: 6px;
+    margin-left: 10px;
+    border-radius: 100%;
+}
+
+.title {
+    background-color: #0C134F;
+    color: white;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.title h1 {
+    font-size: 1.25rem;
+    padding: 10px;
+}
+
+.form {
+    border: 1px solid #EEEEEE;
+    width: 70%;
+    margin: 0px auto;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.form label {
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.form textarea {
+    width: 70%;
+    height: 150px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: lighter;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.form input {
+    padding-left: 5px;
+    font-weight: lighter;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+    background-color: rgb(57, 234, 234);
+    color: white;
+    height: 30px;
+    width: 30px;
+    border: none;
+    outline: none;
+    font-size: larger;
+    font-weight: 3rem;
+    margin-top: 30px;
+    display: block;
+}
+
+.btn-dark {
+    width: 30%;
+    font-size: 1.5rem;
+    height: auto;
+    margin: 50px auto;
+}
+
+.cv {
+    display: none;
+}
+
+
+.cv {
+    height: 842px;
+    width: 595px;
+    margin: 50px auto;
+}
+
+.personal {
+    background-color: #000000;
+}
+
+.professional {
+    background-color: #282A3A
+}
+
+.personal #imageSet {
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    margin-top: 50px;
+}
+
+.personal #nameSet {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    margin-top: 30px;
+}
+
+.personal #designationSet {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(216, 222, 226);
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+.personal #addressSet,
+#emailSet,
+#phoneSet {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(216, 222, 226);
+    font-size: 0.8rem;
+    display: inline;
+}
+
+.personal .icon {
+    color: rgb(216, 222, 226);
+    font-size: 0.8rem;
+    display: inline;
+}
+
+.personal #skill {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin-top: 50px;
+    border-top: 1px solid;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    color: rgb(216, 222, 226);
+    font-size: 0.8rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul li {
+    margin: 15px;
+    position: relative;
+    right: 12px;
+    width: 80%;
+    word-wrap: break-word;
+}
+
+.professional h2 {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.professional {
+    list-style-type: none;
+    color: rgb(216, 222, 226);
+    font-size: 0.8rem;
+    font-family: 'Ubuntu', sans-serif;
+}

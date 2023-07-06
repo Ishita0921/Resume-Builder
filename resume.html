@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ResumeBuilder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Mono:wght@700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="resume.css">
+    <script src="https://kit.fontawesome.com/ec6cea2c8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <div class="cv-input">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://i.pinimg.com/originals/57/fe/98/57fe9893aca86265c86d94d93824e91b.jpg" alt="Logo"
+                        width="30" height="24" class="d-inline-block align-text-top">
+                    ResumeBuilder
+                </a>
+            </div>
+        </nav>
+
+        <div class="title">
+            <h1>ABOUT SECTION</h1>
+        </div>
+
+        <div class="form">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="nameField">Name</label><br>
+                        <input type="text" id="nameField">
+                    </div>
+                    <div class="col">
+                        <label for="imageField">Your Image</label><br>
+                        <input type="file" id="imageField">
+                    </div>
+                    <div class="col">
+                        <label for="designationField">Designation</label><br>
+                        <input type="text" id="designationField">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="addressField">Address</label><br>
+                        <input type="text" id="addressField">
+                    </div>
+                    <div class="col">
+                        <label for="emailField">Email</label><br>
+                        <input type="email" id="emailField">
+                    </div>
+                    <div class="col">
+                        <label for="phoneField">Phone No.</label><br>
+                        <input type="text" id="phoneField">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="title">
+            <h1>EXPERIENCE</h1>
+        </div>
+        <div class="form experienceArea">
+            <label for="experienceField">ADD JOB DESCRIPTION</label><br>
+            <textarea class="experienceField"></textarea><br>
+            <button id="experienceButton" onclick="addAreaExperience()"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+
+
+        <div class="title">
+            <h1>EDUCATION</h1>
+        </div>
+        <div class="form educationArea">
+            <label for="educationField">ENTER EDUCATION QUALIFICATIONS</label><br>
+            <textarea class="educationField"></textarea><br>
+            <button id="educationButton" onclick="addAreaEducation()"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+
+        <div class="title">
+            <h1>PROJECTS</h1>
+        </div>
+        <div class="form projectArea">
+            <label for="projectField">MENTION VARIOUS PROJECTS</label><br>
+            <textarea class="projectField"></textarea><br>
+            <button id="projectButton" onclick="addAreaProject()"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+
+        <div class="title">
+            <h1>SKILLS</h1>
+        </div>
+        <div class="form skillArea">
+            <label for="skillField">YOUR SKILLS</label><br>
+            <input type="text" class="skillField">
+            <br>
+            <button id="skillButton" onclick="addAreaSkill()"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+
+        <br>
+        <center><button class="btn btn-dark" onclick="cvGenerator()">Generate Resume</button></center>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="cv">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 personal">
+                    <img src="https://www.seekpng.com/png/detail/960-9607343_priya-female-profile-icon-in-circle.png"
+                        alt="" id="imageSet">
+                    <p id="nameSet">Ishita Shokeen</p>
+                    <p id="designationSet">Computer Science Student</p>
+                    <p class="icon"><i class="fa-solid fa-location-dot"></i></p>
+                    <p id="addressSet"> Address</p><br>
+                    <p class="icon"><i class="fa-solid fa-envelope"></i></p>
+                    <p id="emailSet"> Email</p><br>
+                    <p class="icon"><i class="fa-solid fa-phone"></i></p>
+                    <p id="phoneSet"> Phone No.</p><br>
+                    <p id="skill">SKILLS</p>
+                    <ul id="skillSet">
+                        <li>Python</li>
+                        <li>Html</li>
+                        <li>Css</li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-8 professional">
+                    <h2 id="experience"><i class="fa-sharp fa-solid fa-briefcase"></i> Experience</h2>
+                    <ul id="experienceSet">
+                        <li>Google Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta nihil tenetur
+                            incidunt, dolore asperiores neque, delectus nostrum deserunt ut laudantium hic? Eaque
+                            quaerat iste repudiandae, suscipit totam nobis atque! Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Doloremque iste omnis voluptates officiis illum similique
+                            molestias libero commodi voluptas dicta. Quam ratione quasi placeat repellat repudiandae
+                            ipsum, optio ullam! Rem!</li>
+
+                    </ul>
+
+                    <h2 id="education"><i class="fa-solid fa-school"></i> EDUCATION</h2>
+                    <ul id="educationSet">
+                        <li>Google Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta nihil tenetur
+                            incidunt, dolore asperiores neque, delectus nostrum deserunt ut laudantium hic? Eaque
+                            quaerat iste repudiandae, suscipit totam nobis atque! Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Doloremque iste omnis voluptates officiis illum similique
+                            molestias libero commodi voluptas dicta. Quam ratione quasi placeat repellat repudiandae
+                            ipsum, optio ullam! Rem!</li>
+
+                    </ul>
+
+                    <h2 id="project"><i class="fa-solid fa-diagram-project"></i> PROJECTS</h2>
+                    <ul id="projectSet">
+                        <li>Google Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta nihil tenetur
+                            incidunt, dolore asperiores neque, delectus nostrum deserunt ut laudantium hic? Eaque
+                            quaerat iste repudiandae, suscipit totam nobis atque! Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Doloremque iste omnis voluptates officiis illum similique
+                            molestias libero commodi voluptas dicta. Quam ratione quasi placeat repellat repudiandae
+                            ipsum, optio ullam! Rem!</li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <center><button onclick="printResume()" class="btn btn-dark">Print Resume</button></center>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="resume.js"></script>
+</body>
+
+</html>
